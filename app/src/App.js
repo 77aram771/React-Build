@@ -1,12 +1,14 @@
-import React from 'react';
-import './App.scss';
+import React from "react";
+import {BrowserRouter as Router} from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
+import NavBar from "./container/NavBar";
+import Routers from "./Router/index";
 
-    </div>
-  );
+export default function App() {
+    return (
+        <Router>
+            <NavBar/>
+            <Routers/>
+        </Router>
+    );
 }
-
-export default App;
